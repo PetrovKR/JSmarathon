@@ -34,3 +34,4 @@ console.log(calc("delete", 10,5));
 console.log(calc("remain", 15,6));
 console.log(calc());
 console.log(calc("sum","b",6));
+console.log(calc(1, 3, 5));
