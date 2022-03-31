@@ -1,10 +1,9 @@
-function calc (op, a, b) {
-
-    if (typeof a != "number" || typeof b != "number") {
+function calc (operation, a, b) {
+const isNotValid = typeof a != "number" || typeof b != "number" || a !== a || b !== b;
+    if (isNotValid){
         return "Error";
     }
-
-    switch (op) {
+    switch (operation) {
         case "sum" :
             return a + b;
             break;
@@ -35,3 +34,4 @@ console.log(calc("remain", 15,6));
 console.log(calc());
 console.log(calc("sum","b",6));
 console.log(calc(1, 3, 5));
+console.log(calc("sum",NaN,NaN));
